@@ -1,0 +1,1 @@
+import{r as s,G as o,j as e}from"./app-Dp2wy5Mt.js";const r="/greats/public/assets/bg_home-BGCyVySD.png";function n(a){const{setBreadcrumbs:t}=s.useContext(o);return s.useEffect(()=>{t({path:["Home"],title:"Home"})},[]),e.jsx("div",{class:"container-fluid py-4",children:e.jsx("img",{className:"img-fluid rounded",src:r})})}export{n as default};

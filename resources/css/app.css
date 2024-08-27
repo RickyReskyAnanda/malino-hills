@@ -1,0 +1,34 @@
+/* Mengatur lebar/tinggi scrollbar */
+::-webkit-scrollbar {
+    width: 8px;  /* Untuk scrollbar vertikal */
+    height: 8px; /* Untuk scrollbar horizontal */
+}
+
+/* Mengubah gaya thumb pada scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(84, 84, 84, 0.166); /* Mengatur warna dan transparansi */
+    border-radius: 10px; /* Membuat sudut scroll bar membulat */
+}
+
+/* Mengubah gaya track pada scrollbar */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Mengatur warna track dengan transparansi */
+    border-radius: 10px;
+}
+
+
+table.dataTable tbody th,table.dataTable tbody td {
+    padding: 7px;
+}
+.dataTables_empty{
+    padding-top:20px !important;
+    padding-bottom:20px !important;
+    font-size: 15px;
+}
+.pointer {
+    cursor: pointer;
+}
+
+  .css-13cymwt-control{
+    border-radius: 0.5rem !important;
+  }

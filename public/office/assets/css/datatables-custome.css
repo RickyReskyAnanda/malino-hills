@@ -1,0 +1,49 @@
+div.dt-container .dt-input {
+    border-color: #e9ecef;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#tableMonitoring_info {
+    margin-left: 14px;
+    font-size: 13px;
+}
+
+#tableReporting_info {
+    margin-left: 14px;
+    font-size: 13px;
+}
+
+div.dt-container.dt-empty-footer tbody>tr:last-child>* {
+    border-bottom: none;
+}
+
+div.dt-container .dt-search input {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div.dt-container .dt-paging .dt-paging-button.current,
+div.dt-container .dt-paging .dt-paging-button.current:hover {
+    border-radius: 50%;
+    font-size: 14px;
+    background: transparent;
+    background-image: linear-gradient(310deg, #7928ca, #ff0080);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .09), 0 2px 3px -1px rgba(0, 0, 0, .07);
+    color: #fff !important;
+    border: none;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+    border-left: 10px solid #82d616;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.dtr-expanded>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.dtr-expanded>th.dtr-control:before {
+    border-top: 10px solid #82d616;
+}
+
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+    text-align: left;
+}
