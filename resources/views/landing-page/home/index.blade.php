@@ -7,10 +7,10 @@
     @include('landing-page.home.section-intro')
     @include('landing-page.home.section-slide-images')
 
-    @include('landing-page.home.section-rooms')
+    @include('landing-page.home.section-villas')
     @include('landing-page.home.section-experience')
+    @include('landing-page.home.section-slide-images-facility')
     @include('landing-page.home.section-video')
-    @include('landing-page.home.section-special-offers')
 <!-- 
     <section class="no-top no-bottom section-dark" aria-label="section">
         <a class="d-block hover popup-youtube" href="{{ asset('video_slide.mp4') }}">
@@ -28,3 +28,55 @@
 </div>
 
 </x-base.landing-page>
+<script>
+    let startDate = moment("{{ date('Y-m-d') }}", "YYYY-MM-DD").format("DD MMM YYYY"); // Default ke hari ini jika tidak ada start_date
+        let endDate = moment("{{ date('Y-m-d',strtotime('+ 1 day')) }}", "YYYY-MM-DD").format("DD MMM YYYY");; // Default ke hari ini jika tidak ada end_date
+
+    $('#date-picker').daterangepicker({
+                 "showISOWeekNumbers": true,
+                 "timePicker": false,
+                 "autoUpdateInput": true,
+                 minDate: moment(),
+                 "locale": {
+                     "format": "DD MMM YYYY",
+                     "separator": " - ",
+                     "fromLabel": "From",
+                     "toLabel": "To",
+                     "customRangeLabel": "Custom",
+                     "weekLabel": "W",
+                     "daysOfWeek": [
+                         "Su",
+                         "Mo",
+                         "Tu",
+                         "We",
+                         "Th",
+                         "Fr",
+                         "Sa"
+                     ],
+                     "monthNames": [
+                         "January",
+                         "February",
+                         "March",
+                         "April",
+                         "May",
+                         "June",
+                         "July",
+                         "August",
+                         "September",
+                         "October",
+                         "November",
+                         "December"
+                     ],
+                     "firstDay": 1
+                 },
+                 "linkedCalendars": true,
+                 "showCustomRangeLabel": false,
+                 startDate: startDate,
+                    endDate: endDate,
+                    autoApply: true,
+                 "opens": "right"
+             });
+
+        // Cari elemen yang relevan dan tambahkan atribut
+   
+</script>

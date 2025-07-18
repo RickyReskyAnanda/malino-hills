@@ -11,7 +11,7 @@ class PageHeader extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $subtitle, public string $title)
+    public function __construct(public string $subtitle,  public string $title, public string $url="assets/image/page-header/background2.jpg")
     {
         //
     }

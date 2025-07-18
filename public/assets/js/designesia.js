@@ -310,18 +310,18 @@
            }
         });
 
-        jQuery(".owl-3-cols-autowidth").owlCarousel({
-           center:true,
-           loop:true,
-           autoWidth:true,
-           margin:0,
-           nav:false,
-           dots:false,
-           /*autoplay: true,
+        var owlGallery = jQuery(".owl-3-cols-autowidth").owlCarousel({
+            center:true,
+            loop:true,
+            autoWidth:true,
+            margin:0,
+            nav:false,
+            dots:false,
+            autoplay: true,
             slideTransition: 'linear',
-            autoplayTimeout: 6000,
-            autoplaySpeed: 6000,
-            autoplayHoverPause: false,*/
+            autoplayTimeout: 10000,
+            autoplaySpeed: 15000,
+            autoplayHoverPause: false,
            responsive:{
                1000:{
                    items:4
@@ -334,6 +334,10 @@
                }
            }
         });
+
+        setTimeout(function() {
+            owlGallery.trigger('refresh.owl.carousel');
+          }, 1000);
 
         jQuery(".owl-2-cols-center").owlCarousel({
            center:true,
@@ -1509,50 +1513,6 @@
 
          /* detepicker */
          
-         $('#date-picker').daterangepicker({
-                 "showISOWeekNumbers": true,
-                 "timePicker": false,
-                 "autoUpdateInput": true,
-                 "locale": {
-                     "format": "MMM DD",
-                     "separator": " - ",
-                     "applyLabel": "Apply",
-                     "cancelLabel": "Cancel",
-                     "fromLabel": "From",
-                     "toLabel": "To",
-                     "customRangeLabel": "Custom",
-                     "weekLabel": "W",
-                     "daysOfWeek": [
-                         "Su",
-                         "Mo",
-                         "Tu",
-                         "We",
-                         "Th",
-                         "Fr",
-                         "Sa"
-                     ],
-                     "monthNames": [
-                         "January",
-                         "February",
-                         "March",
-                         "April",
-                         "May",
-                         "June",
-                         "July",
-                         "August",
-                         "September",
-                         "October",
-                         "November",
-                         "December"
-                     ],
-                     "firstDay": 1
-                 },
-                 "linkedCalendars": true,
-                 "showCustomRangeLabel": false,
-                 "startDate": 1,
-                 "endDate": moment().startOf('hour').add(24, 'hour'),
-                 "opens": "right"
-             });
 
          /* de-number begin */
 

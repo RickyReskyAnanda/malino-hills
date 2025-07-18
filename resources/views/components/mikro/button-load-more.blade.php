@@ -1,3 +1,3 @@
 <div class="col-lg-8 offset-lg-2 text-center">
-    <button class="btn btn-outline-primary btn-sm rounded-0" style="padding: 8px 120px !important">{{ $title }}</button>
+<a href="{{ $url }}" class="border-dark  text-dark font-xss" style="padding: 10px 40px !important;     border: 1px solid !important; font-size:14px;">{{ $title }}</a>
 </div>

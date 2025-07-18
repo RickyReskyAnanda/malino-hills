@@ -5,7 +5,7 @@
 
 <head>
     <title>Malino Hills - Resort & Cafe</title>
-    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <link rel="icon" href="{{ asset('assets/favicon.ico') }}" type="image/x-icon" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" >
     <meta content="Malino Hills - Resort & Cafe" name="description" >
@@ -26,11 +26,10 @@
 <body>
     <div id="wrapper">
         <a href="#" id="back-to-top"></a>
-        
+        <a translate="no" href="https://wa.me/{{ $landingPageData['whatsapp'] }}?text=Halo admin, Saya ingin bertanya" id="wa-floating-button" class="rounded-pill d-flex text-white align-items-center justify-content-center"><span><i class="fa-brands fa-whatsapp"></i></span></a>
         <!-- page preloader begin -->
-        <div id="de-loader"></div>
         <!-- page preloader close -->
-
+        <!-- <div id="de-loader"></div> -->
         <!-- header begin -->
         <x-layouts.navbar isTransparent='{{ $isTransparentNavbar }}'/>
         <!-- header close -->
@@ -42,14 +41,13 @@
         <!-- footer close -->
     </div>
     
-    <!-- Javascript Files
-    ================================================== -->
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/designesia.js') }}"></script>
-    <script src="{{ asset('assets/js/swiper.js') }}"></script>
-    <script src="{{ asset('assets/js/custom-marquee.js') }}"></script>
-    <script src="{{ asset('assets/js/custom-swiper-2.js') }}"></script>
-
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
 </body>
 
 

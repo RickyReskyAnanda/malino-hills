@@ -1,5 +1,5 @@
 <section id="subheader" class="relative jarallax text-light">
-    <img src="{{ asset('assets/images/background/3.webp') }}" class="jarallax-img" alt="">
+    <img src="{{ asset($url ?? "assets/image/page-header/background2.jpg?v?v=".time()) }}" class="jarallax-img" alt="">
     <div class="container relative z-index-1000">
         <div class="row justify-content-center">
             <div class="col-lg-6 text-center">

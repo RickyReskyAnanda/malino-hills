@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Enums;
+
+enum ImageType: string
+{
+    case VILLA_THUMBNAIL = 'VILLA_THUMBNAIL';
+    case VILLA_CAROUSEL = 'VILLA_CAROUSEL';
+    case GALLERY = 'GALLERY';
+    case FACILITY = 'FACILITY';
+    case EXPERIENCE_CAROUSEL = 'EXPERIENCE_CAROUSEL';
+    case EXPERIENCE_THUMBNAIL = 'EXPERIENCE_THUMBNAIL';
+    case VENUE = 'VENUE';
+    case LANDSCAPE = 'LANDSCAPE';
+    case PORTRAIT = 'PORTRAIT';
+}

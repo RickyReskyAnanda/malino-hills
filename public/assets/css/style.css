@@ -299,13 +299,13 @@ header.autoshow.scrollOn {
 }
 
 header.autoshow.scrollOff {
-  opacity: ;
+  opacity: 1;
   top: -120px;
 }
 
 header div#logo {
   color: white;
-  max-width: 160px;
+  max-width: 240px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -632,7 +632,7 @@ header .header-col.mid .social-icons {
 #subheader {
   overflow: hidden;
   position: relative;
-  padding: 140px 0 140px 0;
+  padding: 200px 0 200px 0;
 }
 
 #subheader h1 {
@@ -9610,6 +9610,7 @@ h4.de-timeline-year {
   margin-top: -100px;
 }
 
+.w-16px{width: 16px}
 .w-20px{width: 20px}
 .w-24px{width: 24px}
 .w-40px{width: 40px}
@@ -15970,7 +15971,7 @@ i.btn-action-hide {
   background: #ffffff;
   position: fixed;
   bottom: -40px;
-  right: 20px;
+  left: 20px;
   z-index: 1020;
   width: 40px;
   height: 40px;
@@ -15986,6 +15987,25 @@ i.btn-action-hide {
   border-radius:0px;
   -moz-border-radius:0px;
   -webkit-border-radius:0px;
+}
+
+#wa-floating-button {
+  font-size: 40px;
+  background: #25d366;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  z-index: 1020;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  padding-top: 3px;
+  border: 0;
+  transition: opacity 0.2s ease-out;
+  outline: none;
+  opacity: 1;
 }
 
 #back-to-top:hover {
@@ -19796,17 +19816,6 @@ border-radius:20px 0 0 20px;
 /* bootstrap cols 5 end */
 
 
-@media (min-width: 1200px) {
-
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1200px;
-  }
-}
-
 
 @media(min-width:980px) and (max-width: 1199px) {
   #mainmenu li a:after {
@@ -21213,4 +21222,11 @@ border-radius:20px 0 0 20px;
 .font-section{
   font-size: 36px !important;
 }
+.h-16px{height: 16px}
 .h-20px{height: 20px}
+.h-300px{height: 300px}
+.h-400px{height: 400px}
+.h-500px{height: 500px}
+.pointer{
+  cursor: pointer;
+}

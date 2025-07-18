@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="{{ asset('office/assets/img/favicon.png') }}">
     @viteReactRefresh
     @vite('resources/js/app.jsx')
+    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->

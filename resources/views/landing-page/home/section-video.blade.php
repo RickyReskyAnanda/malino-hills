@@ -1,4 +1,4 @@
-<section class="no-bottom section-dark" aria-label="section">
+<section class="section-dark" aria-label="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 wow fadeInUp">

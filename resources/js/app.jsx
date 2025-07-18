@@ -1,13 +1,12 @@
-                                                            
-import './bootstrap';
+import './bootstrap'
+import '../css/app.css'
 
-import React from "react"
-import ReactDOM from 'react-dom/client';        
+import ReactDOM from 'react-dom/client'
+import Base from './Base'
+import { GlobalProvider } from './contexts/GlobalContext';
 
-import Base from './Base';
-
-ReactDOM.createRoot(document.getElementById('app')).render(     
-    <Base />        
-);
-                                                                                                                                                                                            
-                                                                                                                                                                                        
+ReactDOM.createRoot(document.getElementById('app')).render(
+    <GlobalProvider>
+        <Base/>
+    </GlobalProvider>
+)
